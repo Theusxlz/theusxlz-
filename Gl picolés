@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Picolé Gourmet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .intro {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        .intro h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .intro p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .benefits {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .benefit {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .benefit h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .benefit p {
+            font-size: 16px;
+        }
+        .flavors {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .flavors h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .flavor-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .flavor-item {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1 1 30%;
+        }
+        .flavor-item h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .flavor-item p {
+            font-size: 16px;
+        }
+        .lead-form {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            text-align: center;
+        }
+        .lead-form h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GL Gourmet</h1>
+    </header>
+    <div class="container">
+        <section class="intro">
+            <h2>Descubra os Melhores Sabores de Picolé</h2>
+            <p>Nossos picolés gourmet são feitos com os melhores ingredientes e sabores únicos que vão te surpreender. Experimente a qualidade e o sabor que só nós oferecemos.</p>
+            <a href="#lead-form" class="cta">Quero Saber Mais</a>
+        </section>
+        <section class="benefits">
+            <div class="benefit">
+                <h3>Ingredientes Naturais</h3>
+                <p>Utilizamos apenas ingredientes naturais para garantir o melhor sabor e qualidade.</p>
+            </div>
+            <div class="benefit">
+                <h3>Sabores Exclusivos</h3>
+                <p>Descubra sabores únicos e exclusivos que você não encontra em nenhum outro lugar.</p>
+            </div>
+            <div class="benefit">
+                <h3>Entrega Rápida</h3>
+                <p>Receba seus picolés gourmet rapidamente em qualquer lugar da cidade.</p>
+            </div>
+        </section>
+        <section class="flavors">
+            <h2>Nossos Sabores</h2>
+            <ul class="flavor-list">
+                <li class="flavor-item">
+                    <h3>Ninho com Nutella</h3>
+                    <p>Uma combinação irresistível de Ninho e Nutella que vai conquistar o seu paladar.</p>
+                </li>
+                <li class="flavor-item">
+                    <h3>Ninho com Oreo</h3>
+                    <p>O delicioso sabor do Ninho combinado com pedaços crocantes de Oreo.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="lead-form" id="lead-form">
+            <h2>Cadastre-se e Receba Novidades e Ofertas</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Seu Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="4" placeholder="Sua Mensagem"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </div
+  </body>
